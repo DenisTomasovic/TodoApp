@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ApplicationProvider } from '@ui-kitten/components'
+import * as eva from '@eva-design/eva'
+import { default as kitten_theme } from './kitten-theme.json'
+import MainNavigator from './navigation/navigator/MainNavigator'
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
 
-export default function App() {
+const App = () => {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+      <ApplicationProvider {...eva} theme={{ ...eva.light, ...kitten_theme }}>
+          <Provider store={store}>
+              <MainNavigator/>
+          </Provider>
+      </ApplicationProvider>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App

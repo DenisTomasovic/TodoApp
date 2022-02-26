@@ -1,0 +1,17 @@
+{
+  "color-basic-100": "#393939",
+  "color-basic-200": "#393939",
+  "color-basic-300": "#2d2d2d",
+  "color-basic-400": "#2d2d2d",
+  "color-basic-500": "#2d2d2d",
+  "color-basic-600": "#6a6a6a",
+  "color-basic-700": "#000",
+  "color-basic-800": "#aeaeae",
+  "color-basic-900": "#000",
+  "color-basic-1000": "#000",
+  "color-basic-1100": "#000",
+
+  "color-primary-default": "#e3f071",
+  "color-primary-active": "#e6eabe"
+}
+

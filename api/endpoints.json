@@ -1,0 +1,11 @@
+{
+  "CATEGORIES": {
+    "GET_ALL": "/categories",
+    "DELETE_BY_ID": "/categories/{id}"
+  },
+
+  "TASKS": {
+    "GET_BY_ID": "/categories/{id}/task",
+    "BY_ID": "/categories/{category_id}/task/{task_id}"
+  }
+}
